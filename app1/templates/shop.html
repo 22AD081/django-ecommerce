@@ -1,0 +1,130 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Beauty Product Categories</title>
+    <style>
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        section {
+            max-width: 800px;
+            width: 100%;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            padding: 20px;
+            text-align: center;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .category {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .category-item {
+            width: 200px;
+            margin: 10px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+
+        .category-item:hover {
+            transform: scale(1.05);
+        }
+
+        .category-img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-bottom: 2px solid #ddd;
+        }
+
+        .category-text {
+            padding: 10px;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+        <h1>Explore Beauty Product Categories</h1>
+        
+        <div class="category">
+            <div class="category-item">
+                <img class="category-img" src="{% static 'img4.jpg' %}" alt="Lipstick">
+                <div class="category-text">
+                    <a href="#">Lipstick</a>
+                </div>
+            </div>
+
+            <div class="category-item">
+                <img class="category-img" src="{% static 'img5.jpg' %}" alt="Eyeshadow">
+                <div class="category-text">
+                    <a href="#">Eyeshadow</a>
+                </div>
+            </div>
+
+            <div class="category-item">
+                <img class="category-img" src="{% static 'img6.png' %}" alt="Foundation">
+                <div class="category-text">
+                    <a href="#">Foundation</a>
+                </div>
+            </div>
+
+            <!-- Add more categories -->
+            <div class="category-item">
+                <img class="category-img" src="{% static 'img7.jpg' %}" alt="Mascara">
+                <div class="category-text">
+                    <a href="#">Mascara</a>
+                </div>
+            </div>
+
+            <div class="category-item">
+                <img class="category-img" src="{% static 'img8.jpg' %}" alt="Blush">
+                <div class="category-text">
+                    <a href="#">Blush</a>
+                </div>
+            </div>
+
+            <div class="category-item">
+                <img class="category-img" src="{% static 'img9.jpg' %}" alt="Nail Polish">
+                <div class="category-text">
+                    <a href="#">Nail Polish</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

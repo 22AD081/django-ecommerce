@@ -1,0 +1,119 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dazler Beauty Products</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        section {
+            max-width: 800px;
+            width: 100%;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            padding: 20px;
+            text-align: center;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .product {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .product-item {
+            width: 300px;
+            margin: 20px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        .product-item:hover {
+            transform: scale(1.05);
+        }
+
+        .product-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 2px solid #ddd;
+        }
+
+        .product-details {
+            padding: 20px;
+        }
+
+        .product-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .product-description {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .product-price {
+            font-size: 16px;
+            color: #007bff;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+        <h1>Dazler Beauty Products</h1>
+        
+        <div class="product">
+
+            <div class="product-item">
+                <img class="product-img" src="{% static 'img12.jpg' %}" alt="Dazler Product 1">
+                <div class="product-details">
+                    <div class="product-title">Dazler Lipstick - Velvet Red</div>
+                    <div class="product-description">Rich, velvety color for a stunning pout.</div>
+                    <div class="product-price">Price: $14.99</div>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <img class="product-img" src="{% static 'img13.jpg' %}" alt="Dazler Product 2">
+                <div class="product-details">
+                    <div class="product-title">Dazler Foundation - Radiant Glow</div>
+                    <div class="product-description">Achieve a radiant and flawless complexion.</div>
+                    <div class="product-price">Price: $22.99</div>
+                </div>
+            </div>
+
+            <!-- Add more product items as needed -->
+
+        </div>
+    </section>
+
+</body>
+</html>
